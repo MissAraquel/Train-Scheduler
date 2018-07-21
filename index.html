@@ -15,9 +15,9 @@
         <h1 class="display-4">Train Scheduler</h1>
       </div>
     </div>  
-  </div>
-  <!-- Table for data -->
-  <div class="row justify-content-center">
+</div>
+<!-- Table for data -->
+<div class="row justify-content-center">
     <div class="col-10">
       <table class="table table-striped">
         <thead>
@@ -32,6 +32,30 @@
         <tbody>
         </tbody>
       </table>
+    </div>
+</div>
+<!-- Form -->
+<div class="row justify-content-center">
+    <div class="col-10">
+      <form class="border px-2">
+        <div class="form-group mt-2">
+          <label for="train-name">Train Name</label>
+          <input type="text" class="form-control" id="train-name" aria-describedby="trainName" placeholder="Enter Train Name">
+        </div>
+        <div class="form-group">
+          <label for="train-dest">Destination</label>
+          <input type="text" class="form-control" id="train-dest" placeholder="Enter Destination">
+        </div>
+        <div class="form-group">
+          <label for="train-time">First Train Time (HH:mm - military time)</label>
+          <input type="text" class="form-control" id="train-time" placeholder="Enter Train Time">
+        </div>    
+        <div class="form-group">
+            <label for="train-freq">Frequency (min)</label>
+            <input type="text" class="form-control" id="train-freq" placeholder="Enter Frequency">
+        </div>
+        <button type="submit" class="btn btn-primary mb-3">Submit</button>
+      </form>
     </div>
 </div>
 </body>
